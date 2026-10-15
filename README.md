@@ -4,7 +4,7 @@
 
 # Spec-Driven Development
 
-**The Definitive Guide to Building Software with AI Agents.**
+**Shipping Production Software with AI Agents.**
 
 A complete, practitioner's book on Spec-Driven Development (SDD) — the method that
 shipped a 13-app crypto fintech to production in 70 days, solo, with AI agents.
@@ -212,6 +212,10 @@ Outputs land in `dist/` (gitignored):
 - `dist/book-{pt-br,en}.pdf` — print-ready interior
 - `dist/book-{pt-br,en}.epub` — reflowable ebook (KDP upload)
 - `dist/cover-{pt-br,en}.png` — 1600×2560 cover
+
+`bash kit/scripts/build.sh --print` (with `SOURCE_MD=BOOK.en.md` for the English
+edition) builds the KDP Print files: `dist/book-<lang>-print.pdf` (interior)
+and `dist/cover-<lang>-{paperback,hardcover}.pdf` (full-wrap covers).
 
 CI (`.github/workflows/build.yml`) builds both languages on every push and PR as a
 **validation smoke test** — it proves the book compiles, but it does **not** upload

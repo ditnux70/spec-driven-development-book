@@ -266,6 +266,7 @@ bash kit/scripts/build.sh           # PDF + EPUB + HTML (default; installs kit n
 bash kit/scripts/build.sh --pdf     # PDF only
 bash kit/scripts/build.sh --epub    # EPUB only
 bash kit/scripts/build.sh --html    # HTML site only (also indexes for search and verifies it against the source)
+bash kit/scripts/build.sh --print   # KDP print: interior + paperback/hardcover covers (not part of the default)
 SOURCE_MD=BOOK.en.md bash kit/scripts/build.sh   # force the English edition
 ```
 
@@ -298,8 +299,17 @@ SOURCE_MD=BOOK.en.md bash kit/scripts/build.sh   # force the English edition
 ### Publishing targets
 
 - **KDP digital**: upload `dist/book-pt-br.epub` + `dist/cover-pt-br.png`.
-- **KDP Print** (paperback): upload `dist/book-pt-br.pdf` (6×9" interior) + a
-  wraparound cover that wraps `dist/cover-pt-br.png` with a spine + back.
+- **KDP Print** (paperback and hardcover, **English only**: KDP Print does not
+  sell on amazon.com.br): `SOURCE_MD=BOOK.en.md bash kit/scripts/build.sh --print`,
+  then upload `dist/book-en-print.pdf` (interior: black & white, cream paper,
+  6×9", no bleed) with `dist/cover-en-paperback.pdf` or
+  `dist/cover-en-hardcover.pdf`. The covers are sized by the interior page
+  count: rebuild them after any text change. Paperback spine comes from the KDP
+  formula (`print.paper`); the hardcover needs `languages.en.print.hardcover`
+  `{width, height, spine, pages}` read off KDP's cover template for that page
+  count. Back cover copy: `languages.en.cover.back`. On `stable`, CI also
+  uploads these to the private bucket under `<prefix>/latest/print/`
+  (not linked from any `/dl` offer).
 - **HTML site**: CI syncs `dist/html/<lang>/` to `<prefix>/latest/html/<lang>/` on `stable`
   (the full book, as browsable files) and uploads an offline copy,
   `<prefix>/latest/book-<lang>-html.zip`. Where the prefix is served is up to the
