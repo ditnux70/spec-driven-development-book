@@ -23,12 +23,12 @@
       },
       "copyright": [
         "Copyright © 2026 Felipe Fontoura.",
-        "O texto deste livro é licenciado sob Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0). Você pode compartilhar e adaptar o texto, com atribuição, para fins não comerciais e sob a mesma licença. A venda deste livro, ou de cópias e obras derivadas, é reservada ao autor. Capa, título e identidade visual não são cobertos por essa licença. Texto completo e código-fonte:",
+        "O texto deste livro é licenciado sob Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0). Você pode compartilhar e adaptar o texto, com atribuição, para fins não comerciais e sob a mesma licença. A venda deste livro, ou de cópias e obras derivadas, é reservada ao autor. Capa, título, identidade visual e a foto do autor não são cobertos por essa licença. Texto completo e código-fonte:",
         "github.com/felipefontoura/spec-driven-development-book",
         "Primeira edição: 2026. Publicação independente.",
         "Os exemplos de código, especificações e o nome de produto TaskFlow Pro são fictícios, criados para fins educacionais. Qualquer semelhança com produtos reais é coincidência.",
         "Marcas mencionadas (Claude, Claude Code, Cursor, GitHub Copilot, Next.js, Fastify, Prisma e outras) são propriedade de seus respectivos donos.",
-        "Contato: felipefontoura.com/contact/?utm_source=sdd-book"
+        "Contato: [felipefontoura.com/contact](https://felipefontoura.com/contact/?utm_source=sdd-book&utm_medium=referral&utm_campaign=copyright&utm_content=pt-br)"
       ]
     },
     "en": {
@@ -45,20 +45,38 @@
         "title": "Spec-Driven Development",
         "subtitle": "Shipping Production Software with AI Agents",
         "label": "the method behind 13 production apps in 70 days",
-        "accent": "Development"
+        "accent": "Development",
+        "back": {
+          "category": "software engineering · ai agents",
+          "headline": "The spec is the memory your agent doesn’t have.",
+          "blurb": [
+            "AI agents write code faster than any team. They also forget every decision when the session ends, and the result is software that demos well and breaks in production.",
+            "Spec-Driven Development fixes the input, not the model. You write requirements, design, and tasks before the code, approve each at a gate, and let the agent execute against a contract it can’t forget."
+          ],
+          "pointsTitle": "Inside:",
+          "points": [
+            "Requirements in EARS format, a design the agent can follow, tasks sized for one session",
+            "Approval gates that stop vibe coding before it reaches main",
+            "TaskFlow Pro, built from scratch, spec by spec",
+            "Spec templates and agent skills, open on GitHub",
+            "How SDD compares to GitHub Spec Kit and Kiro, and how teams adopt it"
+          ],
+          "bio": "Felipe Fontoura has shipped software that couldn’t fail: for 20M customers, for aircraft, for satellites. Then 13 production apps in 70 days, solo, with AI agents. Now he brings that discipline to companies putting AI into production."
+        }
       },
       "copyright": [
         "Copyright © 2026 Felipe Fontoura.",
-        "The text of this book is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). You may share and adapt the text, with attribution, for non-commercial purposes and under the same license. Selling this book, or any copy or derivative of it, is reserved to the author. The cover, title, and visual identity are not covered by this license. Full text and source:",
+        "The text of this book is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). You may share and adapt the text, with attribution, for non-commercial purposes and under the same license. Selling this book, or any copy or derivative of it, is reserved to the author. The cover, title, visual identity, and the author's photo are not covered by this license. Full text and source:",
         "github.com/felipefontoura/spec-driven-development-book",
         "First edition: 2026. Independently published.",
         "Code examples, specifications, and the product name TaskFlow Pro are fictitious, created for educational purposes. Any resemblance to real products is coincidental.",
         "Trademarks mentioned (Claude, Claude Code, Cursor, GitHub Copilot, Next.js, Fastify, Prisma, and others) are property of their respective owners.",
-        "Contact: felipefontoura.com/contact/?utm_source=sdd-book"
+        "Contact: [felipefontoura.com/contact](https://felipefontoura.com/contact/?utm_source=sdd-book&utm_medium=referral&utm_campaign=copyright&utm_content=en)"
       ]
     }
   },
   "html": {
+    "onSite": { "host": "felipefontoura.com", "ref": "sdd-book-read" },
     "downloads": {
       "pt": [
         {
