@@ -291,8 +291,12 @@ SOURCE_MD=BOOK.en.md bash kit/scripts/build.sh   # force the English edition
   and `?ref=sdd-book-read`; several become a menu). The edition is served from
   felipefontoura.com, so its links to the site are on-site: `?ref=`, never
   `utm_*` (an internal UTM overwrites GA4's session source; the site's
-  `tracking.md` rule). The PDF/EPUB contact link keeps its UTM: that is off-site and `chapters` (publish only some chapters,
-  e.g. a free preview). The HTML edition is for reading, not search engines: every
+  `tracking.md` rule). Links to the site in the text (the copyright contact, the
+  "About the Author" page) are written with UTMs, which is right in the PDF, EPUB
+  and print (off-site); `onSite: { host, ref }` makes the HTML build swap those
+  UTMs for `?ref=sdd-book-read`. Copyright lines accept Markdown links
+  (`[felipefontoura.com/contact](…utm…)`) so the reader sees a clean URL.
+  `chapters` publishes only some chapters (e.g. a free preview). The HTML edition is for reading, not search engines: every
   page is `noindex, nofollow`, and there is no robots.txt, sitemap, canonical,
   og or JSON-LD on purpose.
 
