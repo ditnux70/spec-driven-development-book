@@ -1,6 +1,6 @@
 # SDD Kit — Spec-Driven Development for Claude Code
 
-The companion kit to the book **Spec-Driven Development: The Definitive Guide to Building Software with AI Agents**. It turns the method from the book into an enforceable workflow: explicit artifacts, human approval gates, and a `.status` file that is the single source of truth for what is approved.
+The companion kit to the book **Spec-Driven Development: Shipping Production Software with AI Agents**. It turns the method from the book into an enforceable workflow: explicit artifacts, human approval gates, and a `.status` file that is the single source of truth for what is approved.
 
 ```text
 IDEA → PLAN → REQUIREMENTS → DESIGN → TASKS → EXEC → REVIEW

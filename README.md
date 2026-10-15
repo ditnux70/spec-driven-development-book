@@ -4,7 +4,7 @@
 
 # Spec-Driven Development
 
-**The Definitive Guide to Building Software with AI Agents.**
+**Shipping Production Software with AI Agents.**
 
 A complete, practitioner's book on Spec-Driven Development (SDD) — the method that
 shipped a 13-app crypto fintech to production in 70 days, solo, with AI agents.
@@ -22,7 +22,7 @@ English and Brazilian Portuguese. Comes with a ready-to-use SDD kit for Claude C
 ·
 [Ler (pt-BR)](BOOK.pt-BR.md)
 ·
-[Free PDF](https://felipefontoura.com/get/sdd-book/?utm_source=github&utm_medium=repo-website&utm_campaign=sdd-book)
+[Free PDF](https://felipefontoura.com/get/sdd-book/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=readme)
 ·
 [The SDD Kit](sdd-kit/)
 ·
@@ -163,7 +163,7 @@ Full details in [`sdd-kit/README.md`](sdd-kit/README.md) and Appendix B of the b
 
 Just want to read the source? Open [`BOOK.en.md`](BOOK.en.md) or
 [`BOOK.pt-BR.md`](BOOK.pt-BR.md) directly on GitHub — Mermaid diagrams and tables
-render natively. Prefer the typeset book? [**Download the free PDF**](https://felipefontoura.com/get/sdd-book/?utm_source=github&utm_medium=repo-website&utm_campaign=sdd-book)
+render natively. Prefer the typeset book? [**Download the free PDF**](https://felipefontoura.com/get/sdd-book/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=readme)
 (signup required). The PDF and EPUB are also sold on Amazon Kindle / KDP; this
 repository holds the Markdown source, not the finished ebook. Want your own copy
 from source? Build it locally (below).
@@ -212,6 +212,10 @@ Outputs land in `dist/` (gitignored):
 - `dist/book-{pt-br,en}.pdf` — print-ready interior
 - `dist/book-{pt-br,en}.epub` — reflowable ebook (KDP upload)
 - `dist/cover-{pt-br,en}.png` — 1600×2560 cover
+
+`bash kit/scripts/build.sh --print` (with `SOURCE_MD=BOOK.en.md` for the English
+edition) builds the KDP Print files: `dist/book-<lang>-print.pdf` (interior)
+and `dist/cover-<lang>-{paperback,hardcover}.pdf` (full-wrap covers).
 
 CI (`.github/workflows/build.yml`) builds both languages on every push and PR as a
 **validation smoke test** — it proves the book compiles, but it does **not** upload
@@ -295,8 +299,8 @@ The build engine in `kit/` is a separate repository under its own
 
 ## Contact
 
-**Felipe Fontoura** — [felipefontoura.com](https://felipefontoura.com) ·
-[Contact](https://felipefontoura.com/contact/?utm_source=github&utm_medium=readme&utm_campaign=sdd-book) ·
+**Felipe Fontoura** — [felipefontoura.com](https://felipefontoura.com/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=readme) ·
+[Contact](https://felipefontoura.com/contact/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=readme) ·
 [YouTube @f.fontoura](https://www.youtube.com/@f.fontoura) ·
 [@felipefontoura](https://github.com/felipefontoura)
 

@@ -1,6 +1,6 @@
 # Spec-Driven Development
 
-## O Guia Definitivo para Construir Software com Agentes de IA
+## Software em produção com agentes de IA
 
 ### Do método ao código em produção — com o TaskFlow Pro do zero
 

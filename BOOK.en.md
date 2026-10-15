@@ -1,6 +1,6 @@
 # Spec-Driven Development
 
-## The Definitive Guide to Building Software with AI Agents
+## Shipping Production Software with AI Agents
 
 ### From the method to production code — building TaskFlow Pro from scratch
 
