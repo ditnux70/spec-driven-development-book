@@ -3,21 +3,23 @@
   "kit": { "dir": "kit" },
   "author": "Felipe Fontoura",
   "publisher": "Felipe Fontoura",
+  "print": { "paper": "cream" },
   "languages": {
     "pt": {
       "langTag": "pt-BR",
       "title": "Spec-Driven Development",
-      "subtitle": "O Guia Definitivo para Construir Software com Agentes de IA",
+      "subtitle": "Software em produção com agentes de IA",
       "eyebrow": "Do método ao código em produção",
       "tocName": "Sumário",
       "preambleTitle": "Por que este livro existe",
       "partsLabel": "Parte",
       "appendixLabel": "Apêndice",
-      "description": "O guia definitivo de Spec-Driven Development: o método que levou 13 apps a produção em 70 dias, solo, com agentes de IA. Requirements, design e tasks em formato EARS, gates de aprovação, o antídoto ao vibe coding — com Claude Code, e comparado a GitHub Spec Kit e AWS Kiro. Construindo o TaskFlow Pro do zero.",
+      "description": "Spec-Driven Development, da spec à produção: o método que levou 13 apps a produção em 70 dias, solo, com agentes de IA. Requirements, design e tasks em formato EARS, gates de aprovação, o antídoto ao vibe coding — com Claude Code, e comparado a GitHub Spec Kit e AWS Kiro. Construindo o TaskFlow Pro do zero.",
       "cover": {
         "title": "Spec-Driven Development",
-        "subtitle": "O Guia Definitivo para Construir Software com Agentes de IA",
-        "label": "DO MÉTODO AO CÓDIGO EM PRODUÇÃO"
+        "subtitle": "Software em produção com agentes de IA",
+        "label": "o método por trás de 13 apps em 70 dias",
+        "accent": "Development"
       },
       "copyright": [
         "Copyright © 2026 Felipe Fontoura.",
@@ -32,17 +34,18 @@
     "en": {
       "langTag": "en-US",
       "title": "Spec-Driven Development",
-      "subtitle": "The Definitive Guide to Building Software with AI Agents",
+      "subtitle": "Shipping Production Software with AI Agents",
       "eyebrow": "From the method to production code",
       "tocName": "Contents",
       "preambleTitle": "Why this book exists",
       "partsLabel": "Part",
       "appendixLabel": "Appendix",
-      "description": "The definitive guide to Spec-Driven Development: the method that shipped 13 apps to production in 70 days, solo, with AI agents. Requirements, design, and tasks in EARS format, approval gates, the antidote to vibe coding — with Claude Code, and compared to GitHub Spec Kit and AWS Kiro. Building TaskFlow Pro from scratch.",
+      "description": "Spec-Driven Development, from spec to production: the method that shipped 13 apps to production in 70 days, solo, with AI agents. Requirements, design, and tasks in EARS format, approval gates, the antidote to vibe coding — with Claude Code, and compared to GitHub Spec Kit and AWS Kiro. Building TaskFlow Pro from scratch.",
       "cover": {
         "title": "Spec-Driven Development",
-        "subtitle": "The Definitive Guide to Building Software with AI Agents",
-        "label": "FROM THE METHOD TO PRODUCTION CODE"
+        "subtitle": "Shipping Production Software with AI Agents",
+        "label": "the method behind 13 production apps in 70 days",
+        "accent": "Development"
       },
       "copyright": [
         "Copyright © 2026 Felipe Fontoura.",

@@ -81,6 +81,17 @@ jobs:
           test -f "dist/book-${{ matrix.lang }}-html.zip"
           echo "OK ${{ matrix.lang }}: PDF + EPUB + HTML + cover built (uploaded only from stable)"
 
+      # KDP print files (interior without the paper tint + full-wrap covers).
+      # Validation only: they go to KDP by hand, never to the bucket.
+      - name: Build print files (validation only — not published)
+        if: steps.probe.outputs.present == 'true'
+        env:
+          SOURCE_MD: ${{ matrix.source }}
+        run: |
+          bash kit/scripts/build.sh --print
+          test -f "dist/book-${{ matrix.lang }}-print.pdf"
+          test -f "dist/cover-${{ matrix.lang }}-paperback.pdf"
+
       # Private bucket upload: only on the `stable` branch (a push to it, or a
       # manual run started from it). One place only: <prefix>/latest/<file>,
       # overwritten on every release (what the site's /dl serves). No per-commit
