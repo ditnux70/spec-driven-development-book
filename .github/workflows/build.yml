@@ -82,8 +82,9 @@ jobs:
           echo "OK ${{ matrix.lang }}: PDF + EPUB + HTML + cover built (uploaded only from stable)"
 
       # KDP print files (interior without the paper tint + full-wrap covers).
-      # Validation only: they go to KDP by hand, never to the bucket.
-      - name: Build print files (validation only — not published)
+      # Built on every run; like the rest, uploaded to the private bucket only
+      # from `stable` (the upload step below). They go to KDP by hand.
+      - name: Build print files (interior + paperback/hardcover covers)
         if: steps.probe.outputs.present == 'true'
         env:
           SOURCE_MD: ${{ matrix.source }}
@@ -130,6 +131,13 @@ jobs:
           for f in "book-$LANG_ID.pdf" "book-$LANG_ID.epub" "book-$LANG_ID-html.zip" "cover-$LANG_ID.png"; do
             aws s3 cp "dist/$f" "s3://$BUCKET/$PREFIX/latest/$f" "${args[@]}" --only-show-errors
           done
+          # KDP Print deliverables: the print interior and the full-wrap covers
+          # (the hardcover one exists only once its KDP template numbers are in
+          # book.config.json). Private: no /dl offer item points at them.
+          for f in "book-$LANG_ID-print.pdf" "cover-$LANG_ID-paperback.pdf" "cover-$LANG_ID-hardcover.pdf"; do
+            [[ -f "dist/$f" ]] || continue
+            aws s3 cp "dist/$f" "s3://$BUCKET/$PREFIX/latest/print/$f" "${args[@]}" --only-show-errors
+          done
           # The HTML site as browsable files: a folder, synced (not copied) so the
           # bucket mirrors the build. .wasm is uploaded separately with an explicit
           # content type, since Pagefind's search loader needs application/wasm.
@@ -138,4 +146,4 @@ jobs:
             rel="${w#dist/html/$LANG_ID/}"
             aws s3 cp "$w" "s3://$BUCKET/$PREFIX/latest/html/$LANG_ID/$rel" "${args[@]}" --content-type application/wasm --only-show-errors
           done
-          echo "Published $LANG_ID (PDF, EPUB, HTML zip, cover, HTML files) to the private bucket: $PREFIX/latest/"
+          echo "Published $LANG_ID (PDF, EPUB, HTML zip, cover, HTML files, print files) to the private bucket: $PREFIX/latest/"

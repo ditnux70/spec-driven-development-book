@@ -307,7 +307,9 @@ SOURCE_MD=BOOK.en.md bash kit/scripts/build.sh   # force the English edition
   count: rebuild them after any text change. Paperback spine comes from the KDP
   formula (`print.paper`); the hardcover needs `languages.en.print.hardcover`
   `{width, height, spine, pages}` read off KDP's cover template for that page
-  count. Back cover copy: `languages.en.cover.back`.
+  count. Back cover copy: `languages.en.cover.back`. On `stable`, CI also
+  uploads these to the private bucket under `<prefix>/latest/print/`
+  (not linked from any `/dl` offer).
 - **HTML site**: CI syncs `dist/html/<lang>/` to `<prefix>/latest/html/<lang>/` on `stable`
   (the full book, as browsable files) and uploads an offline copy,
   `<prefix>/latest/book-<lang>-html.zip`. Where the prefix is served is up to the
