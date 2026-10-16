@@ -72,7 +72,10 @@
         "Code examples, specifications, and the product name TaskFlow Pro are fictitious, created for educational purposes. Any resemblance to real products is coincidental.",
         "Trademarks mentioned (Claude, Claude Code, Cursor, GitHub Copilot, Next.js, Fastify, Prisma, and others) are property of their respective owners.",
         "Contact: [felipefontoura.com/contact](https://felipefontoura.com/contact/?utm_source=sdd-book&utm_medium=referral&utm_campaign=copyright&utm_content=en)"
-      ]
+      ],
+      "print": {
+        "hardcover": { "width": 14.199, "height": 10.417, "spine": 0.624, "pages": 174, "$comment": "KDP cover calculator: Hardcover, B&W, cream, 6 x 9, 174 pages (2026-10-15)" }
+      }
     }
   },
   "html": {
