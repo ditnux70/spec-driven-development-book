@@ -30,7 +30,7 @@ English and Brazilian Portuguese. Comes with a ready-to-use SDD kit for Claude C
 ·
 [Request Feature](https://github.com/felipefontoura/spec-driven-development-book/issues/new)
 
-<img src=".github/assets/book-en.png" alt="Spec-Driven Development — cover and sample pages" width="480">
+<a href="https://felipefontoura.com/get/sdd-book/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=cover"><img src=".github/assets/book-en.png" alt="Spec-Driven Development — cover and sample pages" width="480"></a>
 
 </div>
 
