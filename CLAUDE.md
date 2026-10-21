@@ -283,6 +283,14 @@ SOURCE_MD=BOOK.en.md bash kit/scripts/build.sh   # force the English edition
 - Mermaid blocks in MD become SVGs embedded as `#figure(image(...))` in the PDF,
   `<figure><img>` in the EPUB and inline `<svg>` in the HTML site. The same
   manifest drives all three paths, so diagram order stays in sync.
+- Edition-only blocks (`kit/README.md`): `<!-- only: md -->` … `<!-- /only -->`
+  shows only on GitHub, and every build drops it. Each `BOOK.*.md` carries five:
+  a CTA to the free PDF/EPUB sign-up at the top and at the end of each Part
+  (`> [!TIP]`, LP `/get/sdd-book/` or `/pt/get/sdd-book/`, UTMs
+  `utm_source=github&utm_medium=referral&utm_campaign=sdd-book` with
+  `utm_content=book-top` / `book-part1`…`book-part4`, so the site tells them from
+  the README's `readme`). Keep both languages in step, and never put a Mermaid
+  diagram inside a block (the build fails).
 - The HTML site is checked by `kit/scripts/verify-html.mjs` (headings, tables,
   code blocks, diagrams and list items must match the Markdown tokens; every
   internal link and anchor must resolve). The build fails if it does not.

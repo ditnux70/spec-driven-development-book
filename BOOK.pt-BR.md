@@ -6,6 +6,13 @@
 
 ---
 
+<!-- only: md -->
+
+> [!TIP]
+> **Lendo no GitHub?** Este livro também é um PDF e EPUB grátis, para ler offline ou no seu e-reader: [felipefontoura.com/pt/get/sdd-book](https://felipefontoura.com/pt/get/sdd-book/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=book-top)
+
+<!-- /only -->
+
 **Por que este livro existe**
 
 Escrevo código em produção há mais de 25 anos. Quando as ferramentas de IA chegaram, fiz o que todo desenvolvedor experiente fez: entrei de cabeça, digitei um prompt e assisti o Claude gerar 500 linhas de código em 30 segundos.
@@ -762,6 +769,13 @@ Vale ler o que essa spec faz, parte por parte:
 Três ou mais itens desmarcados? O agente vai adivinhar. E palpite em requirements vira bug em produção.
 
 Uma boa spec leva de 30 a 90 minutos para uma feature típica. Esse tempo volta na primeira sessão de implementação: você o gasta em problemas de verdade difíceis, não depurando requisitos mal-entendidos.
+
+<!-- only: md -->
+
+> [!TIP]
+> **A Parte II escreve cinco specs completas.** Fica mais fácil acompanhar no PDF grátis, ao lado do seu editor: [felipefontoura.com/pt/get/sdd-book](https://felipefontoura.com/pt/get/sdd-book/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=book-part1)
+
+<!-- /only -->
 
 # PARTE II: NA PRÁTICA — TASKFLOW PRO
 
@@ -2895,6 +2909,14 @@ O evento em tempo real é uma otimização de latência. Badge e lista sempre se
 ```
 
 Com as cinco specs aprovadas, o TaskFlow Pro está integralmente especificado: ~2 semanas de implementação mapeadas, cada task com verificação, cada decisão com razão. O que falta é executar — e execução com agentes é exatamente o assunto da Parte III.
+
+<!-- only: md -->
+
+> [!TIP]
+> **A Parte III executa essas specs com agentes.** Tenha as specs à mão no PDF e EPUB grátis: [felipefontoura.com/pt/get/sdd-book](https://felipefontoura.com/pt/get/sdd-book/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=book-part2)
+
+<!-- /only -->
+
 # PARTE III: EXECUÇÃO COM AGENTES
 
 ---
@@ -3119,6 +3141,14 @@ Uma nota final, porque é o erro que mais vejo. A tentação natural depois de m
 Isso não é SDD com automação. É vibe coding com etapas.
 
 Os gates são os pontos onde o método deposita o julgamento humano — e são exatamente as partes que **não** se automatizam. Automatize a produção dos artefatos (skills), a execução dos papéis (sub-agentes) e a coleta de evidência (verificação). A aprovação continua sendo você, lendo o documento, editando o `.status` com a própria mão. Vinte segundos de fricção deliberada, por fase, é o preço inteiro do método. É barato pelo que compra.
+
+<!-- only: md -->
+
+> [!TIP]
+> **A Parte IV abre com o caso real: 13 apps em 70 dias.** Leia offline no PDF e EPUB grátis: [felipefontoura.com/pt/get/sdd-book](https://felipefontoura.com/pt/get/sdd-book/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=book-part3)
+
+<!-- /only -->
+
 # PARTE IV: ESCALA E ECOSSISTEMA
 
 ---
@@ -3452,6 +3482,13 @@ A primeira spec é lenta. A segunda leva metade do tempo. Na terceira, é memór
 O código se escreve sozinho agora. A spec não.
 
 **Esse é o trabalho.**
+
+<!-- only: md -->
+
+> [!TIP]
+> **Guarde o livro.** O PDF e o EPUB são grátis: [felipefontoura.com/pt/get/sdd-book](https://felipefontoura.com/pt/get/sdd-book/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=book-part4)
+
+<!-- /only -->
 
 ---
 
