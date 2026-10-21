@@ -2,6 +2,8 @@
 
 The companion kit to the book **Spec-Driven Development: Shipping Production Software with AI Agents**. It turns the method from the book into an enforceable workflow: explicit artifacts, human approval gates, and a `.status` file that is the single source of truth for what is approved.
 
+Why each gate exists is in the book, free: read it [on GitHub](https://github.com/felipefontoura/spec-driven-development-book/blob/main/BOOK.en.md) or get the PDF and EPUB at [felipefontoura.com/get/sdd-book](https://felipefontoura.com/get/sdd-book/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=sdd-kit).
+
 ```text
 IDEA → PLAN → REQUIREMENTS → DESIGN → TASKS → EXEC → REVIEW
 ```

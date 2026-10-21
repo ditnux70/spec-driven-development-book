@@ -3387,6 +3387,16 @@ O checklist de prontidão do time:
 
 Três ou mais desmarcados e você tem a pasta sem a prática: as specs existem, mas a disciplina nunca saiu da cabeça de ninguém.
 
+<!-- only: md -->
+
+> **Levando SDD para um time?** Eu ajudo times de engenharia a fazer exatamente isso: [felipefontoura.com/pt/contact](https://felipefontoura.com/pt/contact/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=book-teams)
+
+<!-- /only -->
+
+<!-- only: pdf epub html
+> **Levando SDD para um time?** Eu ajudo times de engenharia a fazer exatamente isso: [felipefontoura.com/pt/contact](https://felipefontoura.com/pt/contact/?utm_source=sdd-book&utm_medium=referral&utm_campaign=teams-chapter&utm_content=pt-br)
+-->
+
 ---
 
 ## Capítulo 15: O Ecossistema SDD

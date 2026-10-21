@@ -3364,6 +3364,16 @@ The team readiness checklist:
 
 Three or more unchecked and you have the folder without the practice: the specs exist, but the discipline never left anyone's head.
 
+<!-- only: md -->
+
+> **Rolling SDD out to a team?** I help engineering teams do exactly this: [felipefontoura.com/contact](https://felipefontoura.com/contact/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=book-teams)
+
+<!-- /only -->
+
+<!-- only: pdf epub html
+> **Rolling SDD out to a team?** I help engineering teams do exactly this: [felipefontoura.com/contact](https://felipefontoura.com/contact/?utm_source=sdd-book&utm_medium=referral&utm_campaign=teams-chapter&utm_content=en)
+-->
+
 ---
 
 ## Chapter 15: The SDD Ecosystem

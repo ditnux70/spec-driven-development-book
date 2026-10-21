@@ -289,8 +289,15 @@ SOURCE_MD=BOOK.en.md bash kit/scripts/build.sh   # force the English edition
   (`> [!TIP]`, LP `/get/sdd-book/` or `/pt/get/sdd-book/`, UTMs
   `utm_source=github&utm_medium=referral&utm_campaign=sdd-book` with
   `utm_content=book-top` / `book-part1`…`book-part4`, so the site tells them from
-  the README's `readme`). Keep both languages in step, and never put a Mermaid
-  diagram inside a block (the build fails).
+  the README's `readme`). The end of Chapter 14 (teams) has a contact note in
+  every edition, written twice with the same words: an `md` block with the
+  GitHub UTMs (`utm_content=book-teams`) and a hidden `<!-- only: pdf epub html`
+  block with the book's own (`utm_source=sdd-book&utm_campaign=teams-chapter`,
+  `utm_content=<lang>`; the HTML build turns them into `?ref=`). GitHub alerts
+  (`> [!TIP]`) only exist in `md` blocks: the built editions would print the
+  marker. Keep both languages in step, and never put a Mermaid diagram inside a
+  block (the build fails). Other GitHub links to the sign-up page:
+  `utm_content=cover` (README cover) and `sdd-kit` (`sdd-kit/README.md`).
 - The HTML site is checked by `kit/scripts/verify-html.mjs` (headings, tables,
   code blocks, diagrams and list items must match the Markdown tokens; every
   internal link and anchor must resolve). The build fails if it does not.
