@@ -3366,12 +3366,12 @@ Three or more unchecked and you have the folder without the practice: the specs 
 
 <!-- only: md -->
 
-> **Rolling SDD out to a team?** I help engineering teams do exactly this: [felipefontoura.com/contact](https://felipefontoura.com/contact/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=book-teams)
+> **Bringing AI agents to your whole team?** That's the work I do with engineering teams: [felipefontoura.com/contact](https://felipefontoura.com/contact/?utm_source=github&utm_medium=referral&utm_campaign=sdd-book&utm_content=book-teams)
 
 <!-- /only -->
 
 <!-- only: pdf epub html
-> **Rolling SDD out to a team?** I help engineering teams do exactly this: [felipefontoura.com/contact](https://felipefontoura.com/contact/?utm_source=sdd-book&utm_medium=referral&utm_campaign=teams-chapter&utm_content=en)
+> **Bringing AI agents to your whole team?** That's the work I do with engineering teams: [felipefontoura.com/contact](https://felipefontoura.com/contact/?utm_source=sdd-book&utm_medium=referral&utm_campaign=teams-chapter&utm_content=en)
 -->
 
 ---
